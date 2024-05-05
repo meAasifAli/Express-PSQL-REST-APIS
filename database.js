@@ -9,11 +9,13 @@ const client = new Client({
     user: process.env.PG_USER,
     host: process.env.PG_HOST,
     database: process.env.PG_DB,
-    port: process.env.DB_PORT,
+    port: process.env.PG_PORT,
 
 })
 
 await client.connect()
+
+
 
 
 export default client
